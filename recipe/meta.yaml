@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "2.0.0" %}
 
 package:
   name: ioos_qc
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/ioos/ioos_qc/archive/{{ version }}.tar.gz
-  sha256: 5e75ef9ea4dacb90ca28b18427a0ba7250d5dda006838fa96df7dc715b292260 
+  sha256: 2141d1e8902385ca203d554c41fe21ddd0b001d4ee90ebe27700671001ad113e
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ test:
 about:
   home: https://github.com/ioos/ioos_qc
   license: Apache 2.0
-  license_file:  LICENSE.txt
+  license_file: LICENSE.txt
   summary: |
     Collection of utilities, scripts and tests to assist in automated
     quality assurance and quality control for oceanographic datasets and
