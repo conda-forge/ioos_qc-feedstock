@@ -1,5 +1,5 @@
 {% set name = "ioos_qc" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ioos_qc-{{ version }}.tar.gz
-  sha256: 86a43e1b337cd2e0e95960a227fc9f042e6c0d4823ad02ba539bb5d27d12b7a8
+  sha256: f4f367e9cb2a5ae462190dc0feae4fb848811e0b18aa1fb66aec6fa88c67fe16
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -45,7 +45,7 @@ test:
     - pip check
   imports:
     - ioos_qc
-  
+
 outputs:
   - name: ioos_qc
   - name: ioos-qc
