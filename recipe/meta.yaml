@@ -1,5 +1,5 @@
 {% set name = "ioos_qc" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ioos_qc-{{ version }}.tar.gz
-  sha256: f4f367e9cb2a5ae462190dc0feae4fb848811e0b18aa1fb66aec6fa88c67fe16
+  sha256: d02d96abb28a189f72da0e715c5222ae4702f63490f857df44558d790d50e66a
 
 build:
   number: 0
