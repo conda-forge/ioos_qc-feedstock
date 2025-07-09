@@ -31,7 +31,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-ioos--qc-green.svg)](https://anaconda.org/conda-forge/ioos-qc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos-qc.svg)](https://anaconda.org/conda-forge/ioos-qc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos-qc.svg)](https://anaconda.org/conda-forge/ioos-qc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos-qc.svg)](https://anaconda.org/conda-forge/ioos-qc) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos_qc-green.svg)](https://anaconda.org/conda-forge/ioos_qc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos_qc.svg)](https://anaconda.org/conda-forge/ioos_qc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos_qc.svg)](https://anaconda.org/conda-forge/ioos_qc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos_qc.svg)](https://anaconda.org/conda-forge/ioos_qc) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ioos__qc-green.svg)](https://anaconda.org/conda-forge/ioos_qc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ioos_qc.svg)](https://anaconda.org/conda-forge/ioos_qc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ioos_qc.svg)](https://anaconda.org/conda-forge/ioos_qc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ioos_qc.svg)](https://anaconda.org/conda-forge/ioos_qc) |
 
 Installing ioos_qc
 ==================
