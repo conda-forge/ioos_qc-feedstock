@@ -1,0 +1,78 @@
+schema_version: 1
+
+context:
+  python_min: "3.11"
+  version: "3.0.0"
+
+recipe:
+  name: ioos-qc-meta
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/i/ioos_qc/ioos_qc-${{ version }}.tar.gz
+  sha256: 420b0da50980625581d6f931eddc55428ac664530a24c895fecd8fa3e510b58e
+
+build:
+  number: 0
+  noarch: python
+
+outputs:
+  - package:
+      name: ioos-qc
+    build:
+      noarch: python
+      script:
+        - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+    requirements:
+      host:
+        - python ${{ python_min }}.*
+        - setuptools >=42
+        - setuptools-scm
+        - pip
+      run:
+        - python >=${{ python_min }}
+        - geographiclib
+        - geojson
+        - h5netcdf
+        - jsonschema
+        - numpy >=1.14
+        - pandas
+        - pyparsing
+        - ruamel.yaml
+        - scipy
+        - shapely
+        - xarray >2022.03
+    tests:
+      - python:
+          imports:
+            - ioos_qc
+          pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
+
+  - package:
+      name: ioos_qc
+    build:
+      noarch: generic
+    requirements:
+      run:
+        - ${{ pin_subpackage("ioos-qc", exact=True) }}
+    tests:
+      - python:
+          imports: ioos_qc
+          pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - "*"
+
+about:
+  summary: IOOS QARTOD and Quality Control tests implemented in Python
+  license: Apache-2.0
+  license_file: LICENSE.txt
+  homepage: https://pypi.org/project/ioos-qc/
+
+extra:
+  recipe-maintainers:
+    - kwilcox
+    - ocefpaf
