@@ -1,8 +1,7 @@
 schema_version: 1
 
 context:
-  python_min: "3.11"
-  version: "3.0.0"
+  version: "3.1.1"
 
 recipe:
   name: ioos-qc-meta
@@ -10,7 +9,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/i/ioos_qc/ioos_qc-${{ version }}.tar.gz
-  sha256: 420b0da50980625581d6f931eddc55428ac664530a24c895fecd8fa3e510b58e
+  sha256: 7eda9b67d4608ab58ba9e9262cd1769cfe27b0f7b59a37da28970d1bdc7bb841
 
 build:
   number: 0
